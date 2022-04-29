@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="KVS2_PM.Vista_dos">
+    <ContentPage.Content>
+        <StackLayout>
+            <TableView Intent="Form">
+                <TableRoot>
+                    <TableSection Title="Semana 3 Tarea">
+                        
+                        <EntryCell Label="Dato uno :" x:Name="txtDatoUno" Placeholder="Ingrese el dato uno" Keyboard="Numeric"/>
+                        <EntryCell Label="Dato dos :" x:Name="txtDatoDos" Placeholder="Ingrese el dato dos" Keyboard="Numeric"/>
+                        <EntryCell Label="Resultado" x:Name="txtResultado" Placeholder="Resultado" />
+
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+
+
+            <Button x:Name="btnCalcular" Text="Calcular" Clicked="btnCalcular_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
